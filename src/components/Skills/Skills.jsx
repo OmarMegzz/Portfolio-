@@ -15,13 +15,13 @@ import { Link } from "react-router-dom";
 const Skills = () => {
   return (
     <>
-      <div className="flex flex-col  w-full h-full p-36 items-center justify-center  ">
-        <div className="flex flex-col  items-center justify-center bg-black text-white p-20 gap-8 rounded-lg ">
+      <div className="flex flex-col  gap-10 h-screen p-36 items-center justify-center  ">
+        <div className="flex flex-col items-center justify-center  gap-10 w-3/4 h-3/4 bg-black text-white rounded-lg ">
           <h1 className="text-xl border-2 px-8 py-1 font-semibold ">Skills</h1>
           <div>
             <h2 className="text-2xl  font-medium">Using now</h2>
           </div>
-          <div className="flex flex-wrap gap-8 justify-between items-center   ">
+          <div className="flex flex-wrap gap-8 w-3/4 justify-between items-center">
             <Link to={"https://react.dev/"} target={"_blank"}>
               <FontAwesomeIcon
                 icon={faReact}
