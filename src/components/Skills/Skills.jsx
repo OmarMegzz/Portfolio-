@@ -12,18 +12,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
-function Skills() {
+const Skills = () => {
   return (
     <>
-      <div className="flex flex-col h-full  items-center justify-center gap-10 ">
-        <div>
-          <h1 className=" text-xl border-2 px-8 py-1 font-semibold ">Skills</h1>
-        </div>
-        <div className="  flex flex-col items-center justify-center gap-8 ">
+      <div className="flex flex-col  w-full h-full p-36 items-center justify-center  ">
+        <div className="flex flex-col  items-center justify-center bg-black text-white p-20 gap-8 rounded-lg ">
+          <h1 className="text-xl border-2 px-8 py-1 font-semibold ">Skills</h1>
           <div>
-            <h2 className="text-2xl font-medium">Using now</h2>
+            <h2 className="text-2xl  font-medium">Using now</h2>
           </div>
-          <div className="flex flex-wrap justify-between items-center gap-8 ">
+          <div className="flex flex-wrap gap-8 justify-between items-center   ">
             <Link to={"https://react.dev/"} target={"_blank"}>
               <FontAwesomeIcon
                 icon={faReact}
@@ -66,20 +64,11 @@ function Skills() {
                 className=" text-red-500 w-24 h-24"
               />
             </Link>
-            <Link
-              to={"http://linkedin.com/in/omar-magdy-4866a1223"}
-              target={"_blank"}
-            >
-              <FontAwesomeIcon
-                icon={faBootstrap}
-                className=" text-purple-700 w-24 h-24"
-              />
-            </Link>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Skills;

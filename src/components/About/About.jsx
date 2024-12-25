@@ -1,14 +1,11 @@
 import React from "react";
 
-function About() {
+const About = () => {
   return (
     <div className=" flex flex-col h-screen items-center justify-center gap-10 ">
       <div className="w-3/4 h-3/4 rounded-lg bg-black text-white flex flex-col items-center justify-center gap-8 ">
-        <div>
-          <h1 className=" text-xl border-2 px-8 py-1 font-semibold ">
-            About me
-          </h1>
-        </div>
+        <h1 className=" text-xl border-2 px-8 py-1 font-semibold ">About me</h1>
+
         <div className=" flex flex-col text-lg text-center items-center justify-center w-3/4 ">
           <p>
             I am a passionate and dedicated front-end developer with a strong
@@ -26,6 +23,6 @@ function About() {
       </div>
     </div>
   );
-}
+};
 
 export default About;
