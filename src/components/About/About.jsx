@@ -5,9 +5,9 @@ function About() {
     <div className=" flex flex-col h-screen items-center justify-center gap-10 ">
       <div className="w-3/4 h-3/4 rounded-lg bg-black text-white flex flex-col items-center justify-center gap-8 ">
         <div>
-          <h2 className=" text-xl border-2 px-8 py-1 font-semibold ">
+          <h1 className=" text-xl border-2 px-8 py-1 font-semibold ">
             About me
-          </h2>
+          </h1>
         </div>
         <div className=" flex flex-col text-lg text-center items-center justify-center w-3/4 ">
           <p>
