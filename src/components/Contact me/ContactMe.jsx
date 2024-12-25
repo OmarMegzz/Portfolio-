@@ -29,7 +29,7 @@ function ContactMe() {
             rel="noopener noreferrer"
             className="text-blue-400 text-lg hover:underline"
           >
-            🌐 GitHub Profile
+            🌐 GitHub
           </a>
           <a
             href="https://www.linkedin.com/in/omar-magdy-4866a1223/"
@@ -37,7 +37,7 @@ function ContactMe() {
             rel="noopener noreferrer"
             className="text-blue-400 text-lg hover:underline"
           >
-            💼 LinkedIn Profile
+            💼 LinkedIn
           </a>
         </div>
       </div>
