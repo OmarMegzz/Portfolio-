@@ -10,9 +10,9 @@ const Home = () => {
       {/* Text Section */}
       <div className="text-center md:text-left flex flex-col items-center md:items-start">
         <div className="info-text">
-          <h2 className="text-3xl font-bold">I'M</h2>
+          <h2 className="text-3xl  font-bold">I'M</h2>
           <h1 className="text-5xl md:text-7xl font-bold">Omar Magdy</h1>
-          <h3 className="text-xl md:text-2xl font-extrabold text-gray-500">
+          <h3 className="text-xl md:text-2xl font-extrabold text-gray">
             Front-end Developer
           </h3>
         </div>
