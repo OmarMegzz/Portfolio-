@@ -14,7 +14,7 @@ const Projects = () => {
             className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
           >
             <img
-              src="src/assets/freshEcart.png"
+              src="public/freshEcart.png"
               alt="Fresh E-cart"
               className="w-full h-40 object-cover rounded-md"
             />
@@ -32,7 +32,7 @@ const Projects = () => {
             className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
           >
             <img
-              src="src/assets/movies.png"
+              src="public/movies.png"
               alt="Kick Movies"
               className="w-full h-40 object-cover rounded-md"
             />
@@ -50,7 +50,7 @@ const Projects = () => {
             className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
           >
             <img
-              src="src/assets/todoList.png"
+              src="public/todoList.png"
               alt="Todo List"
               className="w-full h-40 object-cover rounded-md"
             />
@@ -68,7 +68,7 @@ const Projects = () => {
             className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
           >
             <img
-              src="src/assets/gitHubSearch.png"
+              src="public/gitHubSearch.png"
               alt="GitHub Search"
               className="w-full h-40 object-cover rounded-md"
             />
