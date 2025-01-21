@@ -10,6 +10,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   return (
@@ -20,12 +21,19 @@ const Skills = () => {
         </h1>
         <h2 className="text-lg md:text-2xl font-medium">Using Now</h2>
         <div className="flex flex-wrap gap-6 md:gap-8 w-full justify-center">
-          <Link to={"https://react.dev/"} target="_blank">
+          <Link to={"https://git-scm.com/"} target="_blank">
             <FontAwesomeIcon
-              icon={faReact}
+              icon={faLaptopCode}
+              className="text-white w-16 h-16 md:w-24 md:h-24"
+            />
+          </Link>
+          <Link to={"https://git-scm.com/"} target="_blank">
+            <FontAwesomeIcon
+              icon={faCode}
               className="text-blue-500 w-16 h-16 md:w-24 md:h-24"
             />
           </Link>
+
           <Link
             to={"https://developer.mozilla.org/en-US/docs/Web/HTML"}
             target="_blank"
@@ -33,15 +41,6 @@ const Skills = () => {
             <FontAwesomeIcon
               icon={faHtml5}
               className="text-red-500 w-16 h-16 md:w-24 md:h-24"
-            />
-          </Link>
-          <Link
-            to={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faJs}
-              className="text-yellow-500 w-16 h-16 md:w-24 md:h-24"
             />
           </Link>
           <Link
@@ -53,10 +52,48 @@ const Skills = () => {
               className="text-blue-700 w-16 h-16 md:w-24 md:h-24"
             />
           </Link>
+          <Link
+            to={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faJs}
+              className="text-yellow-500 w-16 h-16 md:w-24 md:h-24"
+            />
+          </Link>
+          <Link to={"https://react.dev/"} target="_blank">
+            <FontAwesomeIcon
+              icon={faReact}
+              className="text-blue-500 w-16 h-16 md:w-24 md:h-24"
+            />
+          </Link>
+          <Link
+            to={"https://tailwindcss.com/docs/installation"}
+            target="_blank"
+          >
+            <img
+              className="w-16 h-16 md:w-24 md:h-24"
+              src="/tailwind.svg"
+              alt="logo"
+            />
+          </Link>
+          <Link to={"https://git-scm.com/"} target="_blank">
+            <FontAwesomeIcon
+              icon={faBootstrap}
+              className="text-purple-600 w-16 h-16 md:w-24 md:h-24"
+            />
+          </Link>
           <Link to={"https://git-scm.com/"} target="_blank">
             <FontAwesomeIcon
               icon={faGit}
               className="text-red-500 w-16 h-16 md:w-24 md:h-24"
+            />
+          </Link>
+          <Link to={"https://reactrouter.com/home"} target="_blank">
+            <img
+              className="w-16 h-16 md:w-24 md:h-24"
+              src="/reactRouter.svg"
+              alt="logo"
             />
           </Link>
         </div>
