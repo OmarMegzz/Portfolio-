@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/">
           <img
             className="w-14 h-11 rounded-xl"
-            src="/public/Omar-Magdy.svg"
+            src="/Omar-Magdy.svg"
             alt="logo"
           />
         </Link>
