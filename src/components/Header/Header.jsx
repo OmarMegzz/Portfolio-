@@ -170,11 +170,11 @@ const Header = () => {
         {/* Navigation Links */}
         <ul
           className={`
-            fixed top-0 right-0 h-full w-64 mt-16 bg-white shadow-lg transform transition-transform duration-300 ease-in-out
-            ${isOpen ? "translate-x-0" : "translate-x-full"}
-            md:static md:transform-none md:flex md:space-x-6 md:h-auto md:w-auto md:bg-transparent md:shadow-none md:p-0
-            p-4 flex flex-col md:flex-row z-50
-          `}
+    fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out
+    ${isOpen ? "translate-x-0" : "translate-x-full"}
+    md:static md:transform-none md:flex md:space-x-6 md:h-auto md:w-auto md:bg-transparent md:shadow-none md:p-0
+    mt-16 md:mt-0 p-4 flex flex-col md:flex-row z-50
+  `}
         >
           {navLinks.map(({ to, label }) => (
             <li key={to} className="p-1">
