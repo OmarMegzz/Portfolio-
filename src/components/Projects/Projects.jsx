@@ -7,24 +7,6 @@ const Projects = () => {
       <div className="w-full max-w-6xl bg-black text-white rounded-lg p-6 md:p-10 flex flex-col items-center gap-8">
         <h1 className="text-2xl border-2 px-6 py-2 font-semibold">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {/* Fresh E-cart Card */}
-          <Link
-            to={"https://fresh-cart-e-commrce-gamma.vercel.app/"}
-            target="_blank"
-            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
-          >
-            <img
-              src="/freshEcart.png"
-              alt="Fresh E-cart"
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-4">Fresh E-cart</h2>
-            <p className="text-sm text-center mt-2">
-              Fresh E-Cart is a modern e-commerce web application designed to
-              provide a seamless online shopping experience.
-            </p>
-          </Link>
-
           {/* Kick Movies Card */}
           <Link
             to={"https://kick-movies.vercel.app/"}
@@ -40,6 +22,24 @@ const Projects = () => {
             <p className="text-sm text-center mt-2">
               Kick Movies is a dynamic web application designed for movie
               enthusiasts to explore and discover a wide range of films.
+            </p>
+          </Link>
+
+          {/* Fresh E-cart Card */}
+          <Link
+            to={"https://fresh-cart-e-commrce-gamma.vercel.app/"}
+            target="_blank"
+            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
+          >
+            <img
+              src="/freshEcart.png"
+              alt="Fresh E-cart"
+              className="w-full h-40 object-cover rounded-md"
+            />
+            <h2 className="text-lg font-bold mt-4">Fresh E-cart</h2>
+            <p className="text-sm text-center mt-2">
+              Fresh E-Cart is a modern e-commerce web application designed to
+              provide a seamless online shopping experience.
             </p>
           </Link>
 
