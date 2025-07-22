@@ -27,7 +27,7 @@ const Projects = () => {
 
           {/* Kick Movies Card */}
           <Link
-            to={"https://capstone-project-roan-phi.vercel.app/"}
+            to={"https://kick-movies.vercel.app/"}
             target="_blank"
             className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
           >
