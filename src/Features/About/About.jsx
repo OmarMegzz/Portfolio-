@@ -9,7 +9,7 @@ export default function About() {
       <Header>{aboutData.Header}</Header>
 
       {/* Content */}
-      <div className="flex flex-col text-base sm:text-lg text-center items-center justify-center w-full sm:w-3/4">
+      <div className="flex flex-col text-base text-white sm:text-lg text-center items-center justify-center w-full sm:w-3/4">
         <p>{aboutData.description}</p>
       </div>
     </Card>
