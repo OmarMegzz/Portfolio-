@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="h-full p-8 bg-slate-600 flex flex-col items-center justify-center gap-8 md:p-12">
+    <div className="h-full p-8 bg-black flex flex-col items-center justify-center gap-8 md:p-12">
       <div>
-        <h2 className="text-gray text-xl font-medium text-center">
+        <h2 className="text-white text-xl font-medium text-center">
           Omar Magdy
         </h2>
       </div>
@@ -18,13 +18,13 @@ export default function Footer() {
           to={"http://linkedin.com/in/omar-magdy-4866a1223"}
           target={"_blank"}
         >
-          <FontAwesomeIcon icon={faLinkedin} className="text-gray w-6 h-6" />
+          <FontAwesomeIcon icon={faLinkedin} className="text-white w-6 h-6" />
         </Link>
         <Link to={"https://github.com/OmarMegzz"} target={"_blank"}>
-          <FontAwesomeIcon icon={faGithub} className="text-gray w-6 h-6" />
+          <FontAwesomeIcon icon={faGithub} className="text-white w-6 h-6" />
         </Link>
       </div>
-      <p className="text-gray font-light text-center text-sm md:text-base">
+      <p className="text-white font-light text-center text-sm md:text-base">
         &copy; {currentYear} OMAR MAGDY. All rights reserved.
       </p>
     </div>
