@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./Header/Header";
+import Header from "../Features/Header/Header";
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer/Footer";
+import Footer from "../Features/Footer/Footer";
 
-const Layout = () => {
+export default function Layout() {
   return (
     <>
       <Header />
@@ -11,6 +11,4 @@ const Layout = () => {
       <Footer />
     </>
   );
-};
-
-export default Layout;
+}

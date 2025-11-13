@@ -4,9 +4,10 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
+import { homeData } from "../data";
 // import TextLoop from "react-text-loop";
 
-const Home = () => {
+export default function Home() {
   return (
     <div className="h-full  p-8 flex flex-col md:flex-row items-center justify-around gap-8">
       <div className="text-center md:text-left flex flex-col items-center md:items-start">
@@ -20,10 +21,12 @@ const Home = () => {
               delaySpeed={1000}
             />
           </h4>
-          <h2 className="text-3xl  font-bold">I'M</h2>
-          <h1 className="text-3xl md:text-4xl font-bold">Omar Magdy</h1>
+          <h1 className="flex flex-col text-3xl md:text-4xl font-bold">
+            <span>{homeData.span}</span> {homeData.name}
+          </h1>
+
           <h3 className="text-xl md:text-2xl font-extrabold text-gray ">
-            Front-end Developer
+            {homeData.title}
             {/* <Typewriter
               words={[
                 "Front-end Developer",
@@ -40,7 +43,7 @@ const Home = () => {
             /> */}
           </h3>
         </div>
-        <div className="flex items-center justify-center md:justify-start gap-4 pt-6">
+        <div className="flex items-center gap-4 pt-6">
           <Link
             to={"http://linkedin.com/in/omar-magdy-4866a1223"}
             target={"_blank"}
@@ -61,13 +64,11 @@ const Home = () => {
 
       <div className="rounded-lg bg-slate-950 w-3/4 md:w-1/2 lg:w-1/3">
         <img
-          className="w-full h-auto rounded-lg"
+          className="w-full h-full rounded-lg"
           src="/myPhoto.png"
           alt="Omar Magdy"
         />
       </div>
     </div>
   );
-};
-
-export default Home;
+}

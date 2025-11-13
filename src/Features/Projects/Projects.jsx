@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+export default function Projects() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center p-4 md:p-10 gap-8">
       <div className="w-full max-w-6xl bg-black text-white rounded-lg p-6 md:p-10 flex flex-col items-center gap-8">
@@ -82,6 +82,4 @@ const Projects = () => {
       </div>
     </div>
   );
-};
-
-export default Projects;
+}

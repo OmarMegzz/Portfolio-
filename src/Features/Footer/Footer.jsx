@@ -4,7 +4,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <div className="h-full p-8 bg-slate-600 flex flex-col items-center justify-center gap-8 md:p-12">
@@ -29,6 +29,4 @@ const Footer = () => {
       </p>
     </div>
   );
-};
-
-export default Footer;
+}

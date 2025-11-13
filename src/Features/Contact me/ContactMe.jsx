@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactMe() {
+export default function ContactMe() {
   return (
     <div className="p-4 sm:p-8 flex flex-col min-h-screen items-center justify-center bg-gray-100">
       <div className="w-full max-w-md md:max-w-lg bg-black text-white rounded-lg p-6 md:p-10 flex flex-col items-center gap-6 shadow-lg">
@@ -44,5 +44,3 @@ function ContactMe() {
     </div>
   );
 }
-
-export default ContactMe;

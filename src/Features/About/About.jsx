@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+export default function About() {
   return (
     <div className="flex flex-col h-screen items-center justify-center gap-10 px-4 sm:px-8">
       {/* Container for the About section */}
@@ -28,6 +28,4 @@ const About = () => {
       </div>
     </div>
   );
-};
-
-export default About;
+}
