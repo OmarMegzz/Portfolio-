@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
+import {
+  CardContainer,
+  CardBody,
+  CardItem,
+} from "../../components/ui/3d-card.jsx";
+import { projects } from "../data.js";
 
 export default function Projects() {
   return (
@@ -10,77 +16,29 @@ export default function Projects() {
           Projects
         </Header>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {/* Kick Movies Card */}
-          <Link
-            to={"https://kick-movies.vercel.app/"}
-            target="_blank"
-            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
-          >
-            <img
-              src="/movies.png"
-              alt="Kick Movies"
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-4">Kick Movies</h2>
-            <p className="text-sm text-center mt-2">
-              Kick Movies is a dynamic web application designed for movie
-              enthusiasts to explore and discover a wide range of films.
-            </p>
-          </Link>
-
-          {/* Fresh E-cart Card */}
-          <Link
-            to={"https://fresh-cart-e-commrce-gamma.vercel.app/"}
-            target="_blank"
-            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
-          >
-            <img
-              src="/freshEcart.png"
-              alt="Fresh E-cart"
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-4">Fresh E-cart</h2>
-            <p className="text-sm text-center mt-2">
-              Fresh E-Cart is a modern e-commerce web application designed to
-              provide a seamless online shopping experience.
-            </p>
-          </Link>
-
-          {/* Todo List Card */}
-          <Link
-            to={"https://to-do-list-iota-lake.vercel.app/"}
-            target="_blank"
-            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
-          >
-            <img
-              src="/todoList.png"
-              alt="Todo List"
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-4">Todo List</h2>
-            <p className="text-sm text-center mt-2">
-              The Todo List application is a simple yet powerful tool to manage
-              daily tasks effectively. Built with React.
-            </p>
-          </Link>
-
-          {/* GitHub Search Card */}
-          <Link
-            to={"https://alx-fe-reactjs-fpkr.vercel.app/"}
-            target="_blank"
-            className="card hover:scale-105 hover:border p-4 flex flex-col items-center bg-white text-black rounded-lg shadow-md"
-          >
-            <img
-              src="/gitHubSearch.png"
-              alt="GitHub Search"
-              className="w-full h-40 object-cover rounded-md"
-            />
-            <h2 className="text-lg font-bold mt-4">GitHub Search</h2>
-            <p className="text-sm text-center mt-2">
-              GitHub Search is a robust web application that allows users to
-              explore GitHub repositories and profiles effortlessly.
-            </p>
-          </Link>
+          {projects.map((project, index) => (
+            <CardContainer key={index} className="w-full">
+              <CardBody>
+                <CardItem
+                  as={Link}
+                  to={project.link}
+                  target="_blank"
+                  className="block bg-white text-black rounded-lg shadow-md overflow-hidden cursor-pointer w-full h-full p-6"
+                  translateZ={20} // effect depth
+                  rotateY={5} // rotation effect
+                  rotateX={5}
+                >
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full h-40 object-cover rounded-md"
+                  />
+                  <h2 className="text-lg font-bold mt-4">{project.title}</h2>
+                  <p className="text-sm mt-2">{project.desc}</p>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+          ))}
         </div>
       </div>
     </div>
